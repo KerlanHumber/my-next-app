@@ -1,23 +1,32 @@
 body {
-  font-family: sans-serif;
-  margin: 20px;
-}
-
-nav {
-  background-color: #f0f0f0;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  margin: 30px;
+  background-color: #f8f8f8;
   color: #333;
 }
 
+nav {
+  background-color: #e0e0e0;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
 button {
-  padding: 8px 16px;
-  background-color: #4CAF50; /* Green */
+  padding: 10px 20px;
+  background-color: #007bff;
   border: none;
   color: white;
   text-align: center;
@@ -25,16 +34,31 @@ button {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 form label {
-  display: block; /* Make labels stack on top */
-  margin-bottom: 5px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 form input, form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box; /* Include padding in width */
+  width: calc(100% - 18px);
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
