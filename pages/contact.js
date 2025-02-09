@@ -16,7 +16,7 @@ export default function Contact() {
     console.log("Name:", name); // Log the name to the console
     console.log("Message:", message); // Log the message to the console
 
-    // In a real application, you would send the data to a server here.
+    
   };
 
   return (
